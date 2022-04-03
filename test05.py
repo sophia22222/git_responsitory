@@ -1,2 +1,0 @@
-
-i本刚一提交（gitcommit）到仓库，发现注释写错或少提交了部分文件，此时需要修正这次提交的内容，把这样的操作称为修改最后一次提交操作。操作如下：1、手动新增一个test04.py文件，内容为print('test04')2、使用gitadd*、gitcommit-m“新增test05.py代码”进行提交到版本库3、使用命令gitcommit--amend-m"新增test04.py代码"，把最后一次提交的注释进行修改，--amend选项的commit命令（即gitcommit--amend）git会“更正”最近的一次提交。4、再次新增一个文件test05.py文件，内容为print('test05')；5、使用gitadd*命令添加到暂存区6、使用命令gitcommit--amend-m"新增test04.py\test05.py代码"把test05.py也置入最后一次提交的版本中备注：过程中可以使用gitlog查看日志
